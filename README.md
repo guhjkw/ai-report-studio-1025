@@ -36,6 +36,6 @@ python3 tests/browser-check.py  # 23 passed, 0 failed
 The delivered version reads each source through its official API (GA4 Data API, Search Console API, Google Ads API, Business Profile, the client's CRM) with read-only access the agency provides, stores every number with where it came from, and can add a second model to cross-check each summary.
 
 ## Honest scope
-Invented agency, clients and numbers. Nothing connects to a live account. The maths, the flags, the draft writer and the number checker are real code. No client build is shown or claimed.
+Invented agency, clients and numbers. Nothing connects to a live account. The demo draft is template-written from computed numbers so it runs without an API key; a delivered build has Claude write it, with the same checker in front. The maths, the flags, the draft writer and the number checker are real code. No client build is shown or claimed.
 
 Built by Taiwo, Pathfinder Automation Solutions.
