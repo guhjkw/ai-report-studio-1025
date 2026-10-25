@@ -1,0 +1,31 @@
+0. HTML tag balance
+PASS: all tags closed and nested
+1. Dashboard
+PASS: opens on Kestrel Electric, October
+PASS: leads card shows 103 and a red -12.0% change
+PASS: search clicks drop is the top flag
+PASS: chart draws six months of bars
+PASS: switching client recalculates everything
+PASS: Oakhollow: Business Profile shown as missing, not guessed
+PASS: switching month recalculates: September leads 178
+PASS: September: Oakhollow is ready to send
+PASS: lowering the big-swing rule flags more
+2. AI insights and the number checker
+PASS: draft opens with the headline sentence
+PASS: the checker traces every number in the AI draft
+PASS: clicking a sentence shows where its numbers come from
+PASS: typing a wrong number (210) is flagged at once
+3. Client report is blocked until fixed
+PASS: report warns about the untraced number
+PASS: it cannot be marked ready
+PASS: after reset, the report can be marked ready
+PASS: marking ready confirms it
+PASS: share link is shown
+4. Video script
+PASS: five talking points for Bluebarrow, naming the cost per lead problem
+5. Phone layout
+PASS: no sideways scrolling on a phone
+PASS: cards and tabs fit inside the phone screen (nothing clipped)
+PASS: no console or page errors
+
+23 passed, 0 failed

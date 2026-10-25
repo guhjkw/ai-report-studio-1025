@@ -1,0 +1,58 @@
+1. KPIs from the raw source data
+PASS: October leads for Oakhollow: 192
+PASS: close rate is booked / leads: 45 / 192 = 23.4%
+PASS: cost per ad lead is spend / conversions: $3,600 / 76 = $47.37
+PASS: last month is shown next to it: $50.70
+PASS: search click rate: 1,595 / 53,600 = 2.98%
+PASS: leads changed +7.9% on September
+PASS: lower cost per lead counts as good
+PASS: a better average position (smaller number) counts as good
+PASS: ad spend has no good or bad direction
+PASS: history holds every month up to the selected one
+PASS: Business Profile calls are missing in October, shown as n/a
+PASS: each metric names its source and formula
+PASS: the first month has no change to compare
+PASS: unknown client is refused
+PASS: a month with no data is refused
+2. Anomalies, trend breaks and gaps
+PASS: Bluebarrow: cost per ad lead flagged as a high risk
+PASS: Bluebarrow: the spend change is reported as a change, not a risk
+PASS: Kestrel: search clicks flagged as a high risk (down 38%)
+PASS: Kestrel: worse average position is a risk even though the number went up
+PASS: Oakhollow: steady growth is not a risk
+PASS: Oakhollow: the missing Business Profile month is a gap, not an anomaly
+PASS: risks are listed before wins
+PASS: a stricter threshold flags fewer things
+PASS: a looser threshold flags more things
+PASS: a perfectly flat history does not crash the trend check
+3. The AI draft
+PASS: headline sentence first
+PASS: Kestrel draft explains the search drop to the client
+PASS: and tells the team what to check, in a note the client never sees
+PASS: Bluebarrow draft explains the cost per lead jump
+PASS: Oakhollow draft reports the missing source instead of guessing
+PASS: the client text leaves out every team note
+PASS: with no risk, the close is a client-facing next step
+PASS: every sentence carries the numbers it uses
+PASS: the draft ends with an action
+4. Verification: every number traced to the data
+PASS: all 15 drafts (3 clients x 5 months) verify 100%, team and client versions
+PASS: an invented number is flagged (52%)
+PASS: the true numbers still pass
+PASS: decimals do not split sentences: "$47.37" stays whole
+PASS: rounded money is accepted: "$279k" matches $279,000
+PASS: a rounded but wrong value is caught: "$280k"
+PASS: a percent must match a percent: "192%" is flagged
+PASS: a year is not treated as a metric
+PASS: another client's number is flagged here
+PASS: last month's value is allowed when stated
+PASS: text with no numbers is not flagged
+5. Video script, overview and share link
+PASS: five talking points, opening with the client contact
+PASS: the fix point names the real problem
+PASS: overview lists every client
+PASS: clients with high risks or gaps need review
+PASS: September: Oakhollow is ready to send
+PASS: share link is readable
+
+51 passed, 0 failed
